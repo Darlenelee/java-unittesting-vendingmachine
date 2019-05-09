@@ -18,6 +18,10 @@ public class Bin {
         return items.remainingCapacity();
     }
 
+    public int getAvailableNum() {
+        return items.size() - items.remainingCapacity();
+    }
+
     public String getItemName() {
         if (isEmpty()) return null;
         return items.peek().getName();
@@ -31,7 +35,16 @@ public class Bin {
         return items.poll();
     }
 
+
     public void restock(String name, int amount, int wholesalePrice, int retailPrice) {
+        if(wholesalePrice < 0){
+            throw new IllegalArgumentException("WholesalePrice can't be negative");
+        }
+        if( retailPrice< 0){
+            throw new IllegalArgumentException("RetailPrice can't be negative");
+        }if(amount < 0){
+            throw new IllegalArgumentException("Amount can't be negative");
+        }
         if (!isEmpty() && !name.equalsIgnoreCase(getItemName())) {
             throw new IllegalArgumentException(String.format("Cannot restock %s with %s", getItemName(), name));
         }
