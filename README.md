@@ -1,9 +1,7 @@
-= Treehouse - Unit Testing in Java - Vending Machine
+Based on Treehouse junit course programs
 
-This repository is meant to accompany the [Unit Testing in Java](https://teamtreehouse.com/library/unit-testing-in-java/upcoming) Treehouse course.
+Homework 2 for the Software Testing 
 
-In this course we will cover, unit testing best practices, as well as cover some Object Oriented design best practices.
+More Test cases and a Program flow diagram need to be supplemented
 
-We will be using [JUnit](http://junit.org) inside of [IntelliJ IDEA](https://www.jetbrains.com/idea/).
-
-[Join Treehouse today and get your first two weeks free](http://trhou.se/2wksfree)! 
+Doc Samples have been attached
