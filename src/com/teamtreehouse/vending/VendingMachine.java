@@ -38,6 +38,10 @@ public class VendingMachine {
         return creditor.refund();
     }
 
+    public int checkBalance() {
+        return creditor.getAvailableFunds();
+    }
+
     public Item vend(String input) throws InvalidLocationException, NotEnoughFundsException {
         Bin bin = binByInput(input);
         int price = bin.getItemPrice();
